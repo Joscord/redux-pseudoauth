@@ -1,14 +1,12 @@
 import classes from './Auth.module.css';
 // Importamos las acciones y la función de despacho de acciones
 import { authActions } from '../../store';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 const Auth = () => {
-	// De nuestros hooks obtenemos las diferentes propiedades
 	const dispatch = useDispatch();
 	const { login } = authActions;
 
-	// Definimos una función para manejar el login
 	const loginHandler = () => {
 		dispatch(login());
 	};
