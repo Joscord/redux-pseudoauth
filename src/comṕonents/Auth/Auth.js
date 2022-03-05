@@ -6,9 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 const Auth = () => {
 	// De nuestros hooks obtenemos las diferentes propiedades
 	const dispatch = useDispatch();
-	const isAuthenticated = useSelector(state => state.isAuthenticated);
-	// Destructuramos las acciones
-	const { login, logout } = authActions;
+	const { login } = authActions;
 
 	// Definimos una función para manejar el login
 	const loginHandler = () => {
